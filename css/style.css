@@ -29,6 +29,7 @@ section.ipa{
     max-width: 50%;
     margin: auto;
     padding: 50px 10px 30px 25px;
+    color:  #323131;
 }
 
 section.ipa:hover{
@@ -98,4 +99,57 @@ footer p{
 footer a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width:768px){
+    header.top-bar{
+        height: 0;
+        background: none;
+    }
+
+    main{
+        background: url(../imagens/bolo-mobile.jpg) ;
+        background-size: cover;
+    }
+
+    section.ipa{
+        max-width: 95%;
+        margin: 15px auto;
+        padding: 35px 30px 50px 50px;
+        background: rgba(255, 255, 255, 0.797);
+        box-shadow: 1px 1px 10px rgb(171, 169, 169);
+        border-radius: 10px;
+    }
+
+    h1{
+        display: block;
+        margin: 53px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .ipa a{
+        max-width: 60%;
+        display: block;
+        margin: 0 auto;
+        font-size: 1.3em;
+        padding: 15px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:490px){
+    section.ipa{
+        padding: 30px 25px;
+    }
+
+    .ipa a{
+        font-size: 1.1em;
+        padding: 5px 10px;
+    }
 }
